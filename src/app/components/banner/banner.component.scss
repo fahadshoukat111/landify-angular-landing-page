@@ -1,8 +1,13 @@
+.main-container {
+  width: 100%;
+  position: relative;
+}
 .container {
   width: var(--main-section-width);
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .banner-row-one {
@@ -44,13 +49,13 @@
   background-color: #ffff;
   padding: 15px;
   gap: 5px;
-  color: #7c3aed;
-  border: solid;
-  border-radius: 12px;
+  border: transparent;
 }
 
 .text-p-b {
   align-self: center;
+  color: #7c3aed;
+
 }
 
 .rectangle {
@@ -58,7 +63,7 @@
   width: 500px;
   height: 65px;
   background-color: #75e3ea;
-  bottom: 100px;
+  bottom: 50px;
   left: 0;
   transform: skewY(-8deg);
   z-index: 1;
@@ -70,7 +75,7 @@
   width: 200px;
   height: 65px;
   background-color: #ede9fe;
-  bottom: 12px;
+  bottom: -40px;
   left: 0;
   transform: skewY(-8deg);
   z-index: 1;
@@ -81,7 +86,7 @@
   width: 650px;
   height: 65px;
   background-color: #c4b5fd;
-  bottom: 200px;
+  bottom: 160px;
   right: 0;
   transform: skewY(-8deg);
   z-index: 0;
@@ -92,7 +97,7 @@
   width: 200px;
   height: 65px;
   background-color: #ede9fe;
-  bottom: 285px;
+  bottom: 255px;
   right: 20px;
   transform: skewY(-8deg);
   z-index: 0;
@@ -103,7 +108,7 @@
   width: 150px;
   height: 65px;
   background-color: #75e3ea;
-  bottom: 170px;
+  bottom: 130px;
   right: 0;
   transform: skewY(-8deg);
   z-index: 0;
@@ -111,4 +116,39 @@
 
 .banner-row-two {
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 0;
+    gap: 30px;
+  }
+
+  .banner-row-one {
+    margin-block: 12px;
+  }
+
+  .banner-heading {
+    font-size: 50px;
+  }
+
+  .banner-row-two img{
+    height: 475px;
+  }
+
+  .rectangle {
+    width: 250px;
+    bottom: 145px;
+  }
+
+  .rectangleTwo {
+    width: 250px;
+    bottom: 185px;
+  }
+  .small-left-rectangle{
+    bottom: 70px;
+    width: 90px;
+
+  }
 }

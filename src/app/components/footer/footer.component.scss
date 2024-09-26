@@ -1,0 +1,56 @@
+.bg {
+  background: #000;
+}
+
+.container {
+  width: 78%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first {
+  padding-block: 30px;
+  width: 50%;
+}
+
+.second {
+  padding-block: 30px;
+  width: 15%;
+}
+
+.second-d{
+  padding-block: 30px;
+}
+
+.flex-c {
+  display: flex;
+  gap: 10px;
+  margin-block: 15px;
+}
+
+.text-c {
+  color: white;
+}
+
+.spacing{
+  margin-block: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .container{
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .first {
+    width: 100%;
+  }
+
+  .second {
+    width: 100%;
+  }
+
+}

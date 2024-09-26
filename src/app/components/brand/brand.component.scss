@@ -3,6 +3,18 @@
   justify-content: center;
   gap: 75px;
   align-items: center;
-  height: 25vh;
+  height: 50vh;
   border: white;
+  margin-block: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-block: 55px;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: auto;
+
+  }
+
 }
